@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WaffleOS</title>
+        <title>Limoncello Syndicate</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="favicon.png">
     </head>
@@ -16,58 +16,9 @@
               </ul>
         </div>
 
-        <div class="title">WaffleOS</div>
+        <div class="title">Limoncello Syndicate</div>
         
         <div class="heading">About</div>
-        <p style="padding-left: 60px; font-size: 120%;">A 32-bit operating system.</p>
-
-        <div class="heading">Why this was made</div>
-        <ul>
-            <li>I was bored</li>
-            <li>To learn more intimately about how the x86 architecture works.</li>
-            <li>I'm not really sure.</li>
-        </ul>
-
-        <div class="heading">Planned features</div>
-        <ul>
-            <li>IDT</li>
-            <li>APIC</li>
-            <li>Paging</li>
-            <li>Terminal emulation</li>
-            <li>Filesystem</li>
-            <li>Library similiar to ncurses</li>
-        </ul>
-
-        <div class="heading">GitHub stats</div>
-        <ul>
-            <li><b>open issues</b> <span style="position: absolute; left: 260px;" id="open-issue-count"></span></li>
-            <li><b>commits this week</b> <span style="position: absolute; left: 260px;" id="week-commit-count"></span></li>
-            <li><b>total commits</b> <span style="position: absolute; left: 260px;" id="commit-count"></span></li>
-        </ul>
-        <script>
-            const commitCount = document.getElementById("commit-count");
-            fetch("https://api.github.com/repos/Waffle-OS/Waffle-OS/commits")
-                .then(response => response.json())
-                .then(data => {
-                commitCount.textContent = data.length;
-            });
-            const lastWeekCommitCount = document.getElementById("week-commit-count");
-            const oneWeekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
-            const openIssueCount = document.getElementById("open-issue-count");
-            fetch("https://api.github.com/repos/Waffle-OS/Waffle-OS/commits?since=" + oneWeekAgo)
-                .then(response => response.json())
-                .then(data => {
-                    const lastWeekCommits = data.filter(commit => {
-                        const commitDate = new Date(commit.commit.author.date);
-                        return commitDate >= new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
-                    });
-                    lastWeekCommitCount.textContent = lastWeekCommits.length;
-                });
-            fetch("https://api.github.com/repos/Waffle-OS/Waffle-OS/issues?state=open")
-                .then(response => response.json())
-                .then(data => {
-                    openIssueCount.textContent = data.length;
-                });
-        </script>
+        <p style="padding-left: 60px; font-size: 120%;">:3</p>
     </body>
 </html>

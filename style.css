@@ -1,0 +1,129 @@
+body {
+    background-color: #333333;
+    font-family: Cambria;
+    color: white;
+    
+    .title {
+        left: 50%;
+        font-size: 100px;
+        font-weight: bold;
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+
+    .heading {
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    .links .link {
+        background-color: white;
+        border: 2px solid #333333;
+        padding: 5px 5px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        display: block;
+        border-radius: 8px;
+        transition: 0.18s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .links .link:hover {
+        background-color: #D3D3D3;
+        padding: 8px 8px;
+    }
+
+    li {
+        font-size: 120%;
+        padding-left: 18px;
+    }
+
+    .navbar {
+        ul {
+            position: absolute; 
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #161616;
+        }
+          
+        li {
+            float: left;
+        }
+          
+        li a {
+            font-size: 22px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li button {
+            font-size: 22px;
+            background-color: #00000000;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+          
+        li a:hover:not(.active) {
+            background-color: #0c0c0c;
+        }
+
+        li button:hover:not(.active) {
+            background-color: #0c0c0c;
+        }
+          
+        .active {
+            background-color: #474747;
+        }
+    }
+}
+
+.light-theme {
+    background-color: #e1e1e1;
+    color: #272727;
+
+    .links .link {
+        background-color: #444444;
+        border: 2px solid #e1e1e1;
+    }
+
+    .links .link:hover {
+        background-color: #272727;
+    }
+
+    img {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+
+    .navbar {
+        ul {
+            background-color: #6b6b6b;
+        }
+          
+        li a:hover:not(.active) {
+            background-color: #575757;
+        }
+
+        li button:hover:not(.active) {
+            background-color: #575757;
+        }
+          
+        .active {
+            background-color: #444444;
+        }
+    }
+}
